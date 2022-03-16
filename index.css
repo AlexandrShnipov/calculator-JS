@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+
+button,
+input{
+  cursor: pointer;
+}
+
+.calculator-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(189, 214, 228);
+  padding: 50px;
+  border: 2px solid black;
+}
+
+.buttons-block{
+  border-bottom: 1px solid rgb(13, 56, 36);
+  margin-bottom: 10px;
+}
+
+.buttons-block>button {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.inputs-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-block{
+  text-align: start;
+}
+
+.input-block>input{
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+}
+
