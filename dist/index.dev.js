@@ -33,7 +33,9 @@ var onOperationButtonClick = function onOperationButtonClick(e) {
   makeOperation(operation);
 };
 
-buttonPlus.addEventListener('click', onOperationButtonClick);
-buttonMinus.addEventListener('click', onOperationButtonClick);
-buttonMultiply.addEventListener('click', onOperationButtonClick);
-buttonDevide.addEventListener('click', onOperationButtonClick);
+var operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+
+for (var i = 0; i < operationButtons.length; i++) {
+  var button = operationButtons[i];
+  button.addEventListener('click', onOperationButtonClick);
+}
