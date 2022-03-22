@@ -1,7 +1,12 @@
-let buttonPlus = document.querySelector('[data-plus]');
-let buttonMinus = document.querySelector('[data-minus]');
-let buttonMultiply = document.querySelector('.button--multiply');
-let buttonDevide = document.querySelector('[data-devide]');
+//let buttonPlus = document.querySelector('[data-plus]');
+//let buttonMinus = document.querySelector('[data-minus]');
+//let buttonMultiply = document.querySelector('.button--multiply');
+//let buttonDevide = document.querySelector('[data-devide]');
+
+//const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+
+
+let operationButtons = document.getElementsByClassName('operation-button');
 
 let input1 = document.querySelector('[data-inputOne]');
 let input2 = document.querySelector('[data-inputTwo]');
@@ -32,7 +37,7 @@ const onOperationButtonClick = (e) => {
   makeOperation(operation);
 }
 
-const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+
 
 for(let i = 0; i < operationButtons.length; i++) {
   let button = operationButtons[i];

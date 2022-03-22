@@ -1,9 +1,11 @@
 "use strict";
 
-var buttonPlus = document.querySelector('[data-plus]');
-var buttonMinus = document.querySelector('[data-minus]');
-var buttonMultiply = document.querySelector('.button--multiply');
-var buttonDevide = document.querySelector('[data-devide]');
+//let buttonPlus = document.querySelector('[data-plus]');
+//let buttonMinus = document.querySelector('[data-minus]');
+//let buttonMultiply = document.querySelector('.button--multiply');
+//let buttonDevide = document.querySelector('[data-devide]');
+//const operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
+var operationButtons = document.getElementsByClassName('operation-button');
 var input1 = document.querySelector('[data-inputOne]');
 var input2 = document.querySelector('[data-inputTwo]');
 
@@ -32,8 +34,6 @@ var onOperationButtonClick = function onOperationButtonClick(e) {
   var operation = clickedElement.innerHTML;
   makeOperation(operation);
 };
-
-var operationButtons = [buttonPlus, buttonMinus, buttonMultiply, buttonDevide];
 
 for (var i = 0; i < operationButtons.length; i++) {
   var button = operationButtons[i];
